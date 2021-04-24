@@ -36,7 +36,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-user-astronaut"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Eysoft </div>
+                <div class="sidebar-brand-text mx-3">Eysoft</div>
             </a>
 
             <!-- Divider -->
@@ -53,19 +53,8 @@
             <hr class="sidebar-divider">
 
             <!-- Heading -->
-
-
-            <!-- Nav Item - Pages Collapse Menu -->
-
-
-            <!-- Nav Item - Utilities Collapse Menu -->
-
-
-
-
-            <!-- Heading -->
             <div class="sidebar-heading">
-                Features
+                Interface
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
@@ -76,22 +65,22 @@
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">menu</h6>
+                        <h6 class="collapse-header">Menu</h6>
                         <a class="collapse-item" href="projectdone.html">Project Done</a>
-                        <a class="collapse-item" href="projectongoing.html">Project On Going</a>
+                        <a class="collapse-item" href="projectongoing.html">Project On Progress</a>
 
                     </div>
                 </div>
             </li>
 
             <!-- Nav Item - Charts -->
-
-            <!-- Nav Item - Tables -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="inbox.html">
                     <i class="fas fa-envelope"></i>
                     <span>Inbox</span></a>
             </li>
+
+
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
@@ -120,6 +109,7 @@
                         </button>
                     </form>
 
+                    <!-- Topbar Search -->
 
 
                     <!-- Topbar Navbar -->
@@ -159,7 +149,7 @@
                                 <h6 class="dropdown-header">
                                     Message Center
                                 </h6>
-                                <a class="dropdown-item d-flex align-items-center" href="inbox.html">
+                                <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
                                         <img class="rounded-circle" src="img/undraw_profile_1.svg" alt="">
                                         <div class="status-indicator bg-success"></div>
@@ -169,7 +159,7 @@
                                         <div class="small text-gray-500">Emily Fowler · 58m</div>
                                     </div>
                                 </a>
-                                <a class="dropdown-item d-flex align-items-center" href="inbox.html">
+                                <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
                                         <img class="rounded-circle" src="img/undraw_profile_2.svg" alt="">
                                         <div class="status-indicator"></div>
@@ -179,7 +169,7 @@
                                         <div class="small text-gray-500">Jae Chun · 1d</div>
                                     </div>
                                 </a>
-                                <a class="dropdown-item d-flex align-items-center" href="inbox.html">
+                                <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
                                         <img class="rounded-circle" src="img/undraw_profile_3.svg" alt="">
                                         <div class="status-indicator bg-warning"></div>
@@ -189,7 +179,7 @@
                                         <div class="small text-gray-500">Morgan Alvarez · 2d</div>
                                     </div>
                                 </a>
-                                <a class="dropdown-item d-flex align-items-center" href="inbox.html">
+                                <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
                                         <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="">
                                         <div class="status-indicator bg-success"></div>
@@ -199,7 +189,7 @@
                                         <div class="small text-gray-500">Chicken the Dog · 2w</div>
                                     </div>
                                 </a>
-                                <a class="dropdown-item text-center small text-gray-500" href="inbox.html">Read More Messages</a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
                             </div>
                         </li>
 
@@ -213,9 +203,7 @@
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-
-
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <a class="dropdown-item" href="login.html" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i> Logout
                                 </a>
                             </div>
@@ -238,68 +226,93 @@
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                <div class="container">
-                                    <div class="table-wrapper">
-                                        <div class="table-title">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>Full Name</th>
+                                            <th>Email</th>
+                                            <th>Message</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Aldin M</td>
+                                            <td>Aldin@mail.com</td>
+                                            <td>Assalamualaikum Haloo ayo mabar!</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Aris M</td>
+                                            <td>Aldin@mail.com</td>
+                                            <td>hi !</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sandi M</td>
+                                            <td>Aldin@mail.com</td>
+                                            <td>hi !</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Aldin M</td>
+                                            <td>Aldin@mail.com</td>
+                                            <td>hi !</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Aris M</td>
+                                            <td>Aldin@mail.com</td>
+                                            <td>hi !</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sandi M</td>
+                                            <td>Aldin@mail.com</td>
+                                            <td>hi !</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Aldin M</td>
+                                            <td>Aldin@mail.com</td>
+                                            <td>hi !</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Aris M</td>
+                                            <td>Aldin@mail.com</td>
+                                            <td>hi !</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sandi M</td>
+                                            <td>Aldin@mail.com</td>
+                                            <td>hi !</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Aldin M</td>
+                                            <td>Aldin@mail.com</td>
+                                            <td>hi !</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Aris M</td>
+                                            <td>Aldin@mail.com</td>
+                                            <td>hi !</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sandi M</td>
+                                            <td>Aldin@mail.com</td>
+                                            <td>hi !</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Aldin M</td>
+                                            <td>Aldin@mail.com</td>
+                                            <td>hi !</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Aris M</td>
+                                            <td>Aldin@mail.com</td>
+                                            <td>hi !</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sandi M</td>
+                                            <td>Aldin@mail.com</td>
+                                            <td>hi !</td>
+                                        </tr>
 
-                                        </div>
-                                        <table class="table table-bordered">
-                                            <thead>
-                                                <tr>
-                                                    <th>Full Name</th>
-                                                    <th>Email</th>
-                                                    <th>Message</th>
-
-
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Aldin Prayoga</td>
-                                                    <td>aldin@email.com</td>
-                                                    <td> How About $15?</td>
-
-
-                                                </tr>
-                                                <tr>
-                                                    <td>Aldin Prayoga</td>
-                                                    <td>aldin@email.com</td>
-                                                    <td> How About $15?</td>
-
-
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Aldin Prayoga</td>
-                                                    <td>aldin@email.com</td>
-                                                    <td> How About $15?</td>
-
-
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Aldin Prayoga</td>
-                                                    <td>aldin@email.com</td>
-                                                    <td> How About $15?</td>
-
-
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Aldin Prayoga</td>
-                                                    <td>aldin@email.com</td>
-                                                    <td> How About $15?</td>
-
-
-                                                </tr>
-
-
-
-
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -314,7 +327,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Eysoft &copy; Your Website 2021</span>
+                        <span>Copyright &copy; Your Website 2020</span>
                     </div>
                 </div>
             </footer>
